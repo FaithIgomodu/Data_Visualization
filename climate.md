@@ -3,33 +3,16 @@ Climate
 Faith Igomodu
 August 29, 2024
 
-## R Markdown
+# Visiualizing Climate Change Data With ggplot2
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
+Climate change is here and observing its trends using historical
+tempeature data paints a daunting image of future where live as we know
+it is drastically different. To explore these trends through
+visualization, obtained temperature data and studied it using ggplot2.
+Average mean temperature, minimum temperature and maxiumum temperature
+from the National Center for Environmental Information (NCEI) for
+Richmond, Virgina between 1983-2019 was obtained.
 
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+## Read dataset
 
-``` r
-summary(cars)
-```
-
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
-
-## Including Plots
-
-You can also embed plots, for example:
-
-![](climate_files/figure-gfm/pressure-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+Read, clean and sumarize the dataset.
