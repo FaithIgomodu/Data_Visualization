@@ -11,11 +11,54 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Visiualizing Climate Change Data With ggplot2
 
-  Climate change is here and observing its trends using historical tempeature data paints a daunting image of future where live as we know it is drastically different. To explore these trends through visualization, obtained temperature data and studied it using ggplot2.
-  Average mean temperature, minimum temperature and maxiumum temperature   from the National Center for Environmental Information (NCEI) for Richmond, Virgina between 1983-2019 was obtained. 
+  Climate change is here and observing its trends using historical tempeature data paints a daunting image of a future where live as we know it is drastically different. To explore these trends through visualization, obtained temperature data and studied it using ggplot2.
+  Average mean temperature, minimum temperature and maxiumum temperature   from the National Center for Environmental Information (NCEI) for Richmond, Virgina (station number USW00013740) between 1983-2019 was obtained. 
   
+## Install and load libraries 
+
+Expecting the time series dataset may contained missing values, Times Series Missing Vlaue imputation in R (imputeTS) package is used to fill in any missing data. The imputeTS pacakge uses state-of-the-art imputation algorithm to replace missing values. 
+
+```{r}
+#install.packages("imputeTS", quiet = T)
+```
+
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+library(readr)
+library(imputeTS)
+```
+
 ## Read dataset 
 
 Read, clean and sumarize the dataset. 
+
+```{r}
+df <-read_csv("3785897.csv")
+head(df)
+```
+
+
+```{r}
+summary(df)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
